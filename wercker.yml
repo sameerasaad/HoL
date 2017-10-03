@@ -1,9 +1,15 @@
 box: java
 
+dev:
+  steps:
+    - script:
+      name: gradle bootRun
+      code: |
+        ./gradlew bootRun
+        
 # Build Application
 build:
   steps:
-
     - script:
         name: Run Junit tests
         code: |
@@ -19,3 +25,5 @@ build:
         code: |
             mv build/libs/time-api-*.jar $WERCKER_OUTPUT_DIR/time-api.jar
             mv *.template $WERCKER_OUTPUT_DIR/
+
+

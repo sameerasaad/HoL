@@ -17,6 +17,6 @@ public class Time {
     public String getTime() {
         // @TODO: FIX THIS TOMORROW MORNING, FIRST THING. DON'T FORGET. AGAIN.
         // ಠ_ಠ
-        return null;
+        return this.time;
     }
 }
